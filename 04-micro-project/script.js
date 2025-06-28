@@ -1,6 +1,6 @@
 class Library {
   constructor() {
-    this.books = [];
+    this.books = []; // all data shall be record here
   }
 
   addBook(book) {
