@@ -3,9 +3,9 @@ class Library {
     this.books = []; // all data shall be record here
   }
 
-  addBook(book) {
+  addBooks(books) {
     //regular method
-    this.books.push(book);
+    this.books.push(...books);
   }
 
   listAllBooks() {
@@ -47,6 +47,4 @@ let book2 = new Book("Snowball", 12124241, 310, "Mary Buffett");
 let book3 = new Book("Beating the Street", 875551, 350, "Peter Lynch");
 
 let delhiLibrary = new Library();
-delhiLibrary.addBook(book1);
-delhiLibrary.addBook(book2);
-delhiLibrary.addBook(book3);
+delhiLibrary.addBooks([book1, book2, book3]);
